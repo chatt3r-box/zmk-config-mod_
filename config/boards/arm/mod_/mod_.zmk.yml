@@ -1,0 +1,18 @@
+file_format: "1"
+id: mod_
+name: MOD_
+type: board
+arch: arm
+features:
+  - keys
+  - encoder
+outputs:
+  - usb
+  - ble
+siblings:
+  - mod_mn_l
+  - mod_mn_r
+  - mod_fn_l
+  - mod_fn_r
+  - mod_np
+  - mod_xt

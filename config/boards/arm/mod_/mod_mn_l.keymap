@@ -1,0 +1,36 @@
+/*
+ * copyright (c) 2025 ZMK project contributors
+ *
+ * SPDX-license-identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/rgb.h>
+#include <dt-bindings/zmk/outputs.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                &kp ESC &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6
+                &kp TAB     &kp Q   &kp W   &kp E   &kp R   &kp T
+                &kp CLCK      &kp A   &kp S   &kp D   &kp F   &kp G
+                &kp LSHFT &kp BSLH &kp Z  &kp X   &kp C   &kp V
+                &kp LCTRL &kp LWIN  &kp LALT        &kp SPACE
+            >;
+
+            sensor-bindings = <>;
+        };
+
+        fn_layer {
+            bindings = <
+            >;
+
+            sensor-bindings = <>;
+        };
+    };
+};

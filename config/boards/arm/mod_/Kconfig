@@ -1,0 +1,22 @@
+#
+# copyright (c) 2025 ZMK project contributors
+# SPDX-license-identifier: MIT
+#
+
+config BOARD_MOD_MN_L
+    bool
+
+config BOARD_MOD_MN_R
+    bool
+
+config BOARD_MOD_FN_L
+    bool
+
+config BOARD_MOD_FN_R
+    bool
+
+config BOARD_MOD_NP
+    bool
+
+config BOARD_MOD_XT
+    bool
