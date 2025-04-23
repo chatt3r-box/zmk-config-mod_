@@ -23,14 +23,19 @@
                 &kp LCTRL &kp LWIN  &kp LALT        &kp SPACE
             >;
 
-            sensor-bindings = <>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         fn_layer {
             bindings = <
+                &kp trans &kp trans  &kp trans  &kp trans  &kp trans  &kp trans  &kp trans
+                &kp trans     &kp trans   &kp trans   &kp trans   &kp trans   &kp trans
+                &kp trans      &kp trans   &kp trans   &kp trans   &kp trans   &kp trans
+                &kp trans &kp trans &kp trans  &kp trans   &kp trans   &kp trans
+                &kp trans &kp trans  &kp trans        &kp trans
             >;
 
-            sensor-bindings = <>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
