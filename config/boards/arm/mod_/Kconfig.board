@@ -6,29 +6,23 @@
 config BOARD_MOD_MN_L
     bool "mod_mn_l"
     depends on SOC_NRF52833_QIAA
-    select BOARD_MOD_MN_L
 
 config BOARD_MOD_MN_R
     bool "mod_mn_r"
     depends on SOC_NRF52833_QIAA
-    select BOARD_MOD_MN_R
 
 config BOARD_MOD_FN_L
     bool "mod_fn_l"
     depends on SOC_NRF52833_QIAA
-    select BOARD_MOD_FN_L
 
 config BOARD_MOD_FN_R
     bool "mod_fn_r"
     depends on SOC_NRF52833_QIAA
-    select BOARD_MOD_FN_R
 
 config BOARD_MOD_NP
     bool "mod_np"
     depends on SOC_NRF52833_QIAA
-    select BOARD_MOD_NP
 
 config BOARD_MOD_XT
     bool "mod_xt"
     depends on SOC_NRF52833_QIAA
-    select BOARD_MOD_XT
