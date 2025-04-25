@@ -19,7 +19,6 @@
         zephyr,sram = &sram0;
         zephyr,flash = &flash0;
         zmk,kscan = &kscan0;
-        zephyr,console = &cdc_acm_uart;
         zmk,matrix-transform = &default_transform;
     };
 
@@ -59,6 +58,10 @@
     status = "okay";
 };
 
+&usbd {
+    status = "okay";
+};
+
 &flash0 {
     /*
      * For more information, see:
@@ -92,12 +95,5 @@
         boot_partition: partition@f4000 {
             reg = <0x000f4000 0x0000c000>;
         };
-    };
-};
-
-&usbd {
-    status = "okay";
-    cdc_acm_uart: cdc_acm_uart {
-        compatible = "zephyr,cdc-acm-uart";
     };
 };
