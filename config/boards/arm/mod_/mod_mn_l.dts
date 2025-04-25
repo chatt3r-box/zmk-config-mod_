@@ -29,3 +29,7 @@
         control-gpios = <&gpio0 27 GPIO_ACTIVE_HIGH>;
     };
 };
+
+&usbd {
+    status = "okay";
+};
