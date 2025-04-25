@@ -30,7 +30,7 @@ CONFIG_GPIO=y
 CONFIG_PINCTRL=y
 
 # USB & BLE
-CONFIG_ZMK_USB=y
+CONFIG_ZMK_USB=n
 CONFIG_ZMK_BLE=y
 
 # # uncomment to enable USB logging / debugging
