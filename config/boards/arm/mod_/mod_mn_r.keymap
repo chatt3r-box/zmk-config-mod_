@@ -20,7 +20,7 @@
                   &kp SPACE        &kp RALT       &mo 1       &kp RCTRL      &kp LEFT &kp DOWN &kp RIGHT
             >;
 
-            sensor-bindings = <>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         fn_layer {
@@ -32,7 +32,7 @@
                   &kp trans        &kp trans       &kp trans       &kp trans      &kp trans &kp trans &kp trans
             >;
 
-            sensor-bindings = <>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
