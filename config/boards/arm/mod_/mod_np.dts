@@ -24,6 +24,6 @@
     };
 
     aliases {
-        caps_lock_led = &led0;
+        num-lock-led = &led0;
     };
 };

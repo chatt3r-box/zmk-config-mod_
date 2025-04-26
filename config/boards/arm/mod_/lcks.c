@@ -20,12 +20,12 @@ static int led_scroll_lock_listener_cb(const zmk_event_t *eh) {
     // enable scroll lock LED indicator
     if (flags & HID_USAGE_LED_SCROLL_LOCK) {
         LOG_INF("Scroll lock is on");
-        led_on(led_dev, DT_NODE_CHILD_IDX(DT_ALIAS(scroll_lock_led)));
+        led_on(led_dev, DT_NODE_CHILD_IDX(DT_ALIAS(scroll-lock-led)));
 
     // disable scroll lock LED indicator
     } else {
         LOG_INF("Scroll lock is off");
-        led_off(led_dev, DT_NODE_CHILD_IDX(DT_ALIAS(scroll_lock_led)));
+        led_off(led_dev, DT_NODE_CHILD_IDX(DT_ALIAS(scroll-lock-led)));
     }
 
     return 0;

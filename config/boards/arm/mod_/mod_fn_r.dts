@@ -20,6 +20,6 @@
     };
 
     aliases {
-        caps_lock_led = &led0;
+        scroll-lock-led = &led0;
     };
 };
