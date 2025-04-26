@@ -8,6 +8,7 @@
 #include "i2c.dtsi"
 #include "spi.dtsi"
 #include "qdec.dtsi"
+#include "leds.dtsi"
 
 / {
     chosen {
@@ -27,11 +28,6 @@
             RC(4,0) RC(4,1) RC(4,2)         RC(4,4)
         >;
     };
-
-    EXT_POWER {
-        compatible = "zmk,ext-power-generic";
-        control-gpios = <&gpio0 27 GPIO_ACTIVE_HIGH>;
-    };
 };
 
 &usbd {
@@ -39,4 +35,8 @@
     cdc_acm_uart: cdc_acm_uart {
         compatible = "zephyr,cdc-acm-uart";
     };
+};
+
+aliases {
+    caps_lock_led = &led0;
 };

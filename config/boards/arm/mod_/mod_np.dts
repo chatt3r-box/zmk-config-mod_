@@ -6,6 +6,7 @@
 
 #include "mod_.dtsi"
 #include "spi.dtsi"
+#include "leds.dtsi"
 
 / {
     default_transform: matrix_transform {
@@ -21,9 +22,8 @@
             RC(4,0)         RC(4,2)
         >;
     };
+};
 
-    EXT_POWER {
-        compatible = "zmk,ext-power-generic";
-        control-gpios = <&gpio0 26 GPIO_ACTIVE_HIGH>;
-    };
+aliases {
+    num_lock_led = &led0;
 };
