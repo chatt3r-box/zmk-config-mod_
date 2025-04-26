@@ -40,13 +40,13 @@ config ZMK_BLE
 	default y
 
 config CAPS_LOCK_LED
-    default n
+    bool "caps_lock_led"
 
 config NUMS_LOCK_LED
-    default n
+    bool "num_lock_led"
 
 config SCROLL_LOCK_LED
-    default n
+    bool "scroll_lock_led"
 
 if USB
 

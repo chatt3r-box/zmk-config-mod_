@@ -26,12 +26,3 @@ config BOARD_MOD_NP
 config BOARD_MOD_XT
     bool "mod_xt"
     depends on SOC_NRF52833_QIAA
-
-config CAPS_LOCK_LED
-    bool "caps_lock_led"
-
-config NUMS_LOCK_LED
-    bool "num_lock_led"
-
-config SCROLL_LOCK_LED
-    bool "scroll_lock_led"
