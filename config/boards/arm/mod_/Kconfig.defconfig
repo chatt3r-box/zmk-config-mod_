@@ -39,6 +39,15 @@ config BT_CTLR
 config ZMK_BLE
 	default y
 
+config CAPS_LOCK_LED
+    default n
+
+config NUMS_LOCK_LED
+    default n
+
+config SCROLL_LOCK_LED
+    default n
+
 if USB
 
 config USB_NRFX
