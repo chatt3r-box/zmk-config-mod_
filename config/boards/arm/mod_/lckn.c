@@ -20,12 +20,12 @@ static int led_num_lock_listener_cb(const zmk_event_t *eh) {
     // enable num lock LED indicator
     if (flags & HID_USAGE_LED_NUM_LOCK) {
         LOG_INF("Num lock is on");
-        led_on(led_dev, DT_NODE_CHILD_IDX(DT_ALIAS(num-lock-led)));
+        led_on(led_dev, DT_NODE_CHILD_IDX(DT_ALIAS(num_lock_led)));
 
     // disable num lock LED indicator
     } else {
         LOG_INF("Num lock is off");
-        led_off(led_dev, DT_NODE_CHILD_IDX(DT_ALIAS(num-lock-led)));
+        led_off(led_dev, DT_NODE_CHILD_IDX(DT_ALIAS(num_lock_led)));
     }
 
     return 0;
