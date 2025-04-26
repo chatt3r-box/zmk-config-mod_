@@ -22,8 +22,8 @@
             RC(4,0)         RC(4,2)
         >;
     };
-};
 
-aliases {
-    num_lock_led = &led0;
+    aliases {
+        caps_lock_led = &led0;
+    };
 };

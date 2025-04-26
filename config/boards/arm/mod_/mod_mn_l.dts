@@ -28,6 +28,10 @@
             RC(4,0) RC(4,1) RC(4,2)         RC(4,4)
         >;
     };
+
+    aliases {
+        caps_lock_led = &led0;
+    };
 };
 
 &usbd {
@@ -35,8 +39,4 @@
     cdc_acm_uart: cdc_acm_uart {
         compatible = "zephyr,cdc-acm-uart";
     };
-};
-
-aliases {
-    caps_lock_led = &led0;
 };
