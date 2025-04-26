@@ -32,8 +32,3 @@ CONFIG_PINCTRL=y
 # USB & BLE
 CONFIG_ZMK_USB=n
 CONFIG_ZMK_BLE=y
-
-# # uncomment to enable USB logging / debugging
-# CONFIG_ZMK_USB_LOGGING=y
-# CONFIG_ZMK_LOG_LEVEL_DBG=y
-# CONFIG_I2C_LOG_LEVEL_DBG=y

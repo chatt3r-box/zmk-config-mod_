@@ -30,5 +30,15 @@
                 &kp F19 &kp F20
             >;
         };
+
+        util_layer {
+            bindings = <
+                &trans &bootloader
+                &trans &trans
+                &trans &trans
+                &trans &trans
+                &trans &trans
+            >;
+        };
     };
 };

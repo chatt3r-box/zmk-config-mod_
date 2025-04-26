@@ -32,5 +32,15 @@
                 &trans        &trans
             >;
         };
+
+        util_layer {
+            bindings = <
+                &trans &trans &trans &bootloader
+                &trans &trans &trans &trans
+                &trans &trans &trans
+                &trans &trans &trans &trans
+                &trans        &trans
+            >;
+        };
     };
 };
