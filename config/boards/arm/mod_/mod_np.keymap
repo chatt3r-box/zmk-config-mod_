@@ -41,15 +41,17 @@
                 &trans        &trans
             >;
         };
+    };
+};
 
-        macros {
-            NLCK_LED: NLCK_LED {
-                compatible = "zmk,behavior-macro";
-                #binding-cells = <0>;
-                bindings =
-                    <&kp NLCK>,
-                    <&rgb_ug RGB_TOG>;
-            };
+/ {
+    macros {
+        NLCK_LED: NLCK_LED {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp NLCK>,
+                <&rgb_ug RGB_TOG>;
         };
     };
 };
