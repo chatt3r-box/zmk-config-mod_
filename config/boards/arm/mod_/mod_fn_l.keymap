@@ -19,13 +19,13 @@
 
         fn_layer {
             bindings = <
-                &kp ESC &kp F13 &kp F14 &kp F15 &kp F16 &kp F17
+                &kp ESC &kp F13 &kp F14 &kp F15 &kp F16    &kp F17
             >;
         };
 
         util_layer {
             bindings = <
-                &trans &trans &trans &trans &trans &bootloader
+                &trans  &trans  &trans  &trans  &sys_reset &bootloader
             >;
         };
     };

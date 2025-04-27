@@ -34,7 +34,7 @@
         util_layer {
             bindings = <
                 &trans &bootloader
-                &trans &trans
+                &trans &sys_reset
                 &trans &trans
                 &trans &trans
                 &trans &trans
