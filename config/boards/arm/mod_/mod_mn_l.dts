@@ -8,7 +8,7 @@
 #include "i2c.dtsi"
 #include "spi.dtsi"
 #include "qdec.dtsi"
-#include "leds.dtsi"
+#include "led.dtsi"
 
 / {
     chosen {
