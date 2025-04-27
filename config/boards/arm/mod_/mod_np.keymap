@@ -41,5 +41,15 @@
                 &trans        &trans
             >;
         };
+
+        macros {
+            NLCK_LED: NLCK_LED {
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings =
+                    <&macro_tap &kp NLCK>,
+                    <&macro_tap &rgb_ug RGB_TOG>;
+            };
+        };
     };
 };
