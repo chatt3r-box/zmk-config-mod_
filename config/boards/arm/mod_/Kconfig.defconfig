@@ -51,6 +51,9 @@ config SCROLL_LOCK_LED
     bool "scroll_lock_led"
     default n
 
+config ZMK_SPLIT_PERIPHERAL_HID_INDICATORS
+    default y
+
 if USB
 
 config USB_NRFX
