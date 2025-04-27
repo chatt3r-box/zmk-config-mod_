@@ -5,8 +5,8 @@
  */
 
 #include "mod_.dtsi"
-#include "i2c.dtsi"
-#include "qdec.dtsi"
+#include "modules/i2c.dtsi"
+#include "modules/qdec.dtsi"
 
 / {
     default_transform: matrix_transform {

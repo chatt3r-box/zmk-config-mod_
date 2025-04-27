@@ -5,7 +5,7 @@
  */
 
 #include "mod_.dtsi"
-#include "spi.dtsi"
+#include "modules/spi.dtsi"
 
 / {
     default_transform: matrix_transform {
