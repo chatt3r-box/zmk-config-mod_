@@ -40,7 +40,7 @@
 
         util_layer {
             bindings = <
-                &ind_ba   &ind_con &rgb_ug RGB_HUI &rgb_ug RGB_SAD &rgb_ug RGB_SAI &trans &bootloader
+                &ind_bat  &ind_con &rgb_ug RGB_HUI &rgb_ug RGB_SAD &rgb_ug RGB_SAI &trans &bootloader
                 &trans    &trans   &trans          &trans          &trans          &sys_reset
                 &trans    &trans   &trans          &trans          &trans          &trans
                 &trans    &trans   &trans          &trans          &trans          &trans

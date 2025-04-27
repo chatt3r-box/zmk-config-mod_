@@ -26,11 +26,11 @@
 
         fn_layer {
             bindings = <
-                &kp F7  &kp F8   &kp F9 &kp F10 &kp F11 &kp F12 &kp F13 &kp F14 &kp F15
-                &trans  &trans   &trans &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans   &trans &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans   &trans &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans          &mo 2   &trans  &trans  &trans  &trans  &trans
+                &kp F7   &kp F8   &kp F9 &kp F10 &kp F11 &kp F12 &kp F13 &kp F14 &kp F15
+                &trans   &trans   &trans &trans  &trans  &trans  &trans  &trans  &trans
+                &trans   &trans   &trans &trans  &trans  &trans  &trans  &trans  &trans
+                &trans   &trans   &trans &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans          &mo 2   &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -38,11 +38,11 @@
 
         util_layer {
             bindings = <
-                &ind_ba &ind_con &trans &trans  &trans  &trans  &trans  &trans  &bootloader
-                &trans  &trans   &trans &trans  &trans  &trans  &trans  &trans  &sys_reset
-                &trans  &trans   &trans &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans   &trans &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                &ind_bat &ind_con &trans &trans  &trans  &trans  &trans  &trans  &bootloader
+                &trans   &trans   &trans &trans  &trans  &trans  &trans  &trans  &sys_reset
+                &trans   &trans   &trans &trans  &trans  &trans  &trans  &trans  &trans
+                &trans   &trans   &trans &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans          &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
