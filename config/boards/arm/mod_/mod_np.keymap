@@ -47,8 +47,8 @@
                 compatible = "zmk,behavior-macro";
                 #binding-cells = <0>;
                 bindings =
-                    <&macro_tap &kp NLCK>,
-                    <&macro_tap &rgb_ug RGB_TOG>;
+                    <&kp NLCK>,
+                    <&rgb_ug RGB_TOG>;
             };
         };
     };
