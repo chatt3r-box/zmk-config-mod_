@@ -43,13 +43,13 @@ config CAPS_LOCK_LED
     bool "caps_lock_led"
     default n
 
-config NUM_LOCK_LED
-    bool "num_lock_led"
-    default n
+#config NUM_LOCK_LED
+#    bool "num_lock_led"
+#    default n
 
-config SCROLL_LOCK_LED
-    bool "scroll_lock_led"
-    default n
+#config SCROLL_LOCK_LED
+#    bool "scroll_lock_led"
+#    default n
 
 if USB
 

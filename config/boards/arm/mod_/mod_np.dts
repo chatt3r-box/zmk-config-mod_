@@ -6,7 +6,6 @@
 
 #include "mod_.dtsi"
 #include "spi.dtsi"
-#include "leds.dtsi"
 
 / {
     default_transform: matrix_transform {
@@ -23,7 +22,19 @@
         >;
     };
 
-    aliases {
-        num-lock-led = &led0;
+    EXT_POWER {
+        compatible = "zmk,ext-power-generic";
+        control-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH)>;
+    };
+
+    macros {
+        NLCK_LED: NLCK_LED {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp NLCK>
+                , <&macro_tap &rgb_ug RGB_TOG>
+                ;
+        };
     };
 };

@@ -8,7 +8,7 @@
 
 / {
     chosen {
-        zmk,underglow = &caps_lock;
+        zmk,underglow = &lock_led;
     };
 };
 
@@ -34,7 +34,7 @@
     pinctrl-1 = <&spi3_sleep>;
     pinctrl-names = "default", "sleep";
 
-    caps_lock: ws2812@0 {
+    lock_led: ws2812@0 {
         compatible = "worldsemi,ws2812-spi";
 
         /* SPI */
