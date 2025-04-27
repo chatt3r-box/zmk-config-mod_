@@ -9,12 +9,22 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
+    macros {
+        SLCK_LED: SLCK_LED {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp SLCK>,
+                <&rgb_ug RGB_TOG>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-                &kp F6  &kp F7  &kp F8  &kp F9  &kp F10 &kp F11 &kp F12 &kp SLCK
+                &kp F6  &kp F7  &kp F8  &kp F9  &kp F10 &kp F11 &kp F12 &SLCK_LED
             >;
         };
 
