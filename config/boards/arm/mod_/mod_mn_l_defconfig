@@ -58,6 +58,12 @@ CONFIG_LED=y
 CONFIG_CAPS_LOCK_LED=y
 CONFIG_ZMK_RGB_UNDERGLOW_EXT_POWER=n
 
+# enable weak bond
+CONFIG_ZMK_SPLIT_BLE_PREF_WEAK_BOND=y
+
+# enable timer to suspend continuous scanning extra peripherals within 30 seconds once any peripheral is connected
+CONFIG_ZMK_SPLIT_BLE_PREF_CONTINUOUS_SCAN_WINDOW=30000
+
 # # uncomment to enable USB logging / debugging
 # CONFIG_ZMK_USB_LOGGING=y
 # CONFIG_ZMK_LOG_LEVEL_DBG=y

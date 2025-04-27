@@ -39,3 +39,9 @@ CONFIG_SPI=y
 # USB & BLE
 CONFIG_ZMK_USB=n
 CONFIG_ZMK_BLE=y
+
+# enable weak bond
+CONFIG_ZMK_SPLIT_BLE_PREF_WEAK_BOND=y
+
+# enable timer to suspend continuous scanning extra peripherals within 30 seconds once any peripheral is connected
+CONFIG_ZMK_SPLIT_BLE_PREF_CONTINUOUS_SCAN_WINDOW=30000
