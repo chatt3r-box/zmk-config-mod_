@@ -9,6 +9,16 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
+    macros {
+        NLCK_LED: NLCK_LED {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &kp NLCK &rgb_ug RGB_TOG
+                >;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
