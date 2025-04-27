@@ -40,5 +40,5 @@ CONFIG_SPI=y
 CONFIG_ZMK_USB=n
 CONFIG_ZMK_BLE=y
 
-# enable weak bond
+# weak bond
 CONFIG_ZMK_SPLIT_BLE_PREF_WEAK_BOND=y

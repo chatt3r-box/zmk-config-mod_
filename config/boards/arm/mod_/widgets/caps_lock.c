@@ -20,12 +20,12 @@ static int led_caps_lock_listener_cb(const zmk_event_t *eh) {
     // enable caps lock LED indicator
     if (flags & HID_USAGE_LED_CAPS_LOCK) {
         LOG_INF("Caps lock is on");
-        led_on(led_dev, DT_NODE_CHILD_IDX(DT_ALIAS(caps_lock_led)));
+        led_on(led_dev, DT_NODE_CHILD_IDX(DT_ALIAS(led_lock)));
 
     // disable caps lock LED indicator
     } else {
         LOG_INF("Caps lock is off");
-        led_off(led_dev, DT_NODE_CHILD_IDX(DT_ALIAS(caps_lock_led)));
+        led_off(led_dev, DT_NODE_CHILD_IDX(DT_ALIAS(led_lock)));
     }
 
     return 0;

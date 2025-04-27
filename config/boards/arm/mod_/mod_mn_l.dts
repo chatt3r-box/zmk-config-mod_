@@ -8,7 +8,7 @@
 #include "modules/i2c.dtsi"
 #include "modules/spi.dtsi"
 #include "modules/qdec.dtsi"
-#include "modules/led.dtsi"
+#include "modules/leds.dtsi"
 
 / {
     chosen {
@@ -27,10 +27,6 @@
             RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(4,5)
             RC(4,0) RC(4,1) RC(4,2)         RC(4,4)
         >;
-    };
-
-    aliases {
-        caps-lock-led = &led0;
     };
 };
 

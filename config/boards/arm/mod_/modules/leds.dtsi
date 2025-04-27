@@ -1,0 +1,36 @@
+/*
+ * copyright (c) 2025 ZMK project contributors
+ *
+ * SPDX-license-identifier: MIT
+ */
+
+#include <dt-bindings/led/led.h>
+
+/ {
+    aliases {
+        led-lock = &led0;
+        led-red = &led1;
+        led-green = &led2;
+        led-blue = &led3;
+    };
+
+    leds {
+        compatible = "gpio-leds";
+        status = "okay";
+        led0: led0 {
+            gpios = <&gpio0 6  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+        };
+
+        led1: led1 {
+            gpios = <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+        };
+
+        led2: led2 {
+            gpios = <&gpio0 9  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+        };
+
+        led3: led3 {
+            gpios = <&gpio0 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+        };
+    };
+};
