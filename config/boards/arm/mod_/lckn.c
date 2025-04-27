@@ -4,7 +4,7 @@
 #include <zephyr/kernel.h>
 #include <zephyr/init.h>
 #include <zmk/hid_indicators.h>
-#include <zmk/events/hid_indicators_changed.h>
+#include <zmk/events/hid_indicators_changed.c>
 
 #define LED_GPIO_NODE_ID DT_COMPAT_GET_ANY_STATUS_OKAY(gpio_leds)
 
