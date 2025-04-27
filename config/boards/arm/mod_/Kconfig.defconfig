@@ -43,14 +43,6 @@ config CAPS_LOCK_LED
     bool "caps_lock_led"
     default n
 
-#config NUM_LOCK_LED
-#    bool "num_lock_led"
-#    default n
-
-#config SCROLL_LOCK_LED
-#    bool "scroll_lock_led"
-#    default n
-
 if USB
 
 config USB_NRFX
@@ -65,11 +57,3 @@ config ZMK_USB
 endif # USB
 
 endif # BOARD_MOD_MN_L || BOARD_MOD_MN_R || BOARD_MOD_FN_L || BOARD_MOD_FN_R || BOARD_MOD_NP || BOARD_MOD_XT
-
-
-if BOARD_MOD_MN_L || BOARD_MOD_FN_R || BOARD_MOD_NP
-
-config ZMK_SPLIT_PERIPHERAL_HID_INDICATORS
-    default y
-
-endif # BOARD_MOD_MN_L || BOARD_MOD_FN_R || BOARD_MOD_NP

@@ -58,9 +58,6 @@ CONFIG_LED=y
 CONFIG_CAPS_LOCK_LED=y
 CONFIG_ZMK_RGB_UNDERGLOW_EXT_POWER=n
 
-# enable indicator states on peripheral splits
-CONFIG_ZMK_SPLIT_PERIPHERAL_HID_INDICATORS=y
-
 # # uncomment to enable USB logging / debugging
 # CONFIG_ZMK_USB_LOGGING=y
 # CONFIG_ZMK_LOG_LEVEL_DBG=y
