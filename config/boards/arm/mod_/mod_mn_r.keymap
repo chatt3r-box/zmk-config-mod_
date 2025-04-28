@@ -16,7 +16,7 @@
             bindings = <
                       &kp N7  &kp N8  &kp N9  &kp N0  &kp MINUS  &kp EQUAL   &kp BSLH &kp BSPC &kp HOME
                   &kp Y   &kp U   &kp I   &kp O   &kp P   &kp LBKT    &kp RBKT        &kp BSLH &kp PG_UP
-                    &kp H   &kp J   &kp K   &kp L   &kp SEMI   &kp APOS   &kp NUHS    &kp RET  &kp PG_DN
+                    &kp H   &kp J   &kp K   &kp L   &kp SEMI   &kp APOS   &kp NUHS    &kp RET  &kp PG_DN &kp C_PP
                 &kp B   &kp N   &kp M   &kp COMMA &kp DOT &kp FSLH &kp RSHFT          &kp UP   &kp DEL
                   &kp SPACE        &kp RALT       &mo 1       &kp RCTRL      &kp LEFT &kp DOWN &kp RIGHT
             >;
@@ -28,7 +28,7 @@
             bindings = <
                 &kp F7   &kp F8   &kp F9 &kp F10 &kp F11 &kp F12 &kp F13 &kp F14 &kp F15
                 &trans   &trans   &trans &trans  &trans  &trans  &trans  &trans  &trans
-                &trans   &trans   &trans &trans  &trans  &trans  &trans  &trans  &trans
+                &trans   &trans   &trans &trans  &trans  &trans  &trans  &trans  &trans      &kp C_PP
                 &trans   &trans   &trans &trans  &trans  &trans  &trans  &trans  &trans
                          &trans          &mo 2   &trans  &trans  &trans  &trans  &trans
             >;
@@ -40,7 +40,7 @@
             bindings = <
                 &ind_bat &ind_con &trans &trans  &trans  &trans  &trans  &trans  &bootloader
                 &trans   &trans   &trans &trans  &trans  &trans  &trans  &trans  &sys_reset
-                &trans   &trans   &trans &trans  &trans  &trans  &trans  &trans  &trans
+                &trans   &trans   &trans &trans  &trans  &trans  &trans  &trans  &trans      &kp C_PP
                 &trans   &trans   &trans &trans  &trans  &trans  &trans  &trans  &trans
                          &trans          &trans  &trans  &trans  &trans  &trans  &trans
             >;

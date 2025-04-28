@@ -16,11 +16,11 @@
 
         default_layer {
             bindings = <
-                &kp ESC &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6
-                &kp TAB     &kp Q   &kp W   &kp E   &kp R   &kp T
-                &kp CLCK      &kp A   &kp S   &kp D   &kp F   &kp G
-                &kp LSHFT &kp BSLH &kp Z  &kp X   &kp C   &kp V
-                &kp LCTRL &kp LWIN  &kp LALT        &kp SPACE
+                         &kp ESC &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6
+                         &kp TAB     &kp Q   &kp W   &kp E   &kp R   &kp T
+                &kp C_PP &kp CLCK      &kp A   &kp S   &kp D   &kp F   &kp G
+                         &kp LSHFT &kp BSLH &kp Z  &kp X   &kp C   &kp V
+                         &kp LCTRL &kp LWIN  &kp LALT        &kp SPACE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
@@ -28,11 +28,11 @@
 
         fn_layer {
             bindings = <
-                &kp GRAVE &kp F1   &kp F2          &kp F3          &kp F4          &kp F5 &kp F6
-                &trans    &trans   &trans          &trans          &trans          &trans
-                &trans    &trans   &trans          &trans          &trans          &trans
-                &trans    &trans   &trans          &trans          &trans          &trans
-                &trans    &trans   &trans                          &trans
+                       &kp GRAVE &kp F1   &kp F2          &kp F3          &kp F4          &kp F5     &kp F6
+                       &trans    &trans   &trans          &trans          &trans          &trans
+                &trans &trans    &trans   &trans          &trans          &trans          &trans
+                       &trans    &trans   &trans          &trans          &trans          &trans
+                       &trans    &trans   &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
@@ -40,11 +40,11 @@
 
         util_layer {
             bindings = <
-                &ind_bat  &ind_con &rgb_ug RGB_HUI &rgb_ug RGB_SAD &rgb_ug RGB_SAI &trans &bootloader
-                &trans    &trans   &trans          &trans          &trans          &sys_reset
-                &trans    &trans   &trans          &trans          &trans          &trans
-                &trans    &trans   &trans          &trans          &trans          &trans
-                &trans    &trans   &trans                          &trans
+                       &ind_bat  &ind_con &rgb_ug RGB_HUI &rgb_ug RGB_SAD &rgb_ug RGB_SAI &trans     &bootloader
+                       &trans    &trans   &trans          &trans          &trans          &sys_reset
+                &trans &trans    &trans   &trans          &trans          &trans          &trans
+                       &trans    &trans   &trans          &trans          &trans          &trans
+                       &trans    &trans   &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
