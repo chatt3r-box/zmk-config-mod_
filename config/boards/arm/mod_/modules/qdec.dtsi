@@ -31,6 +31,10 @@
     };
 };
 
+/*
+ * panasonic EVQWGD001 horizontal rotary encoder
+ * volume control and / or scrolling
+ */ 
 encoder: &qdec0 {
     status = "okay";
     led-pre = <0>;

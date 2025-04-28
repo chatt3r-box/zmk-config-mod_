@@ -35,6 +35,11 @@
     pinctrl-names = "default", "sleep";
     clock-frequency = <100000>;
 
+    /*
+     * Li-Po battery life / charge monitoring
+     * mn.l: 4000mAh
+     * mn.r: 1020mAh
+     */
     fuel_gauge: max17048@36 {
         compatible = "zmk,maxim-max17048";
 		reg = <0x36>;

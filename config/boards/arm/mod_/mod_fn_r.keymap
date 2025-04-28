@@ -10,6 +10,7 @@
 
 / {
     macros {
+        /* work-around for SCROLL LOCK LED indicator functionality */
         SLCK_LED: SLCK_LED {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;

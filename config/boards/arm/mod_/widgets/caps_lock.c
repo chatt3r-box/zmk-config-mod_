@@ -11,18 +11,18 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
 #define LED_GPIO_NODE_ID DT_COMPAT_GET_ANY_STATUS_OKAY(gpio_leds)
 
-// GPIO-based LED device
+/* GPIO-based LED device */ 
 static const struct device *led_dev = DEVICE_DT_GET(LED_GPIO_NODE_ID);
 
 static int led_caps_lock_listener_cb(const zmk_event_t *eh) {
     zmk_hid_indicators_t flags = zmk_hid_indicators_get_current_profile();
 
-    // enable caps lock LED indicator
+    /* enable CAPS LOCK LED indicator */
     if (flags & HID_USAGE_LED_CAPS_LOCK) {
         LOG_INF("Caps lock is on");
         led_on(led_dev, DT_NODE_CHILD_IDX(DT_ALIAS(led_lock)));
 
-    // disable caps lock LED indicator
+    /* disable CAPS LOCK LED indicator */
     } else {
         LOG_INF("Caps lock is off");
         led_off(led_dev, DT_NODE_CHILD_IDX(DT_ALIAS(led_lock)));
@@ -43,5 +43,5 @@ static int leds_init(const struct device *device) {
     return 0;
 }
 
-// run leds_init on boot
+/* run leds_init on boot */
 SYS_INIT(leds_init, APPLICATION, CONFIG_APPLICATION_INIT_PRIORITY);

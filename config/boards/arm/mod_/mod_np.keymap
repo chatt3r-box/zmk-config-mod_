@@ -10,6 +10,7 @@
 
 / {
     macros {
+        /* work-around for NUM LOCK LED indicator functionality */
         NLCK_LED: NLCK_LED {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;

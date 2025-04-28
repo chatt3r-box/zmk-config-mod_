@@ -33,5 +33,5 @@ CONFIG_PINCTRL=y
 CONFIG_ZMK_USB=n
 CONFIG_ZMK_BLE=y
 
-# weak bond
+# weak bond for better battery life on mn.l
 CONFIG_ZMK_SPLIT_BLE_PREF_WEAK_BOND=y

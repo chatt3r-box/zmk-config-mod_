@@ -17,18 +17,23 @@
     leds {
         compatible = "gpio-leds";
         status = "okay";
+
+        /* CAPS / NUM / SCROLL LOCK LED */
         led0: led0 {
             gpios = <&gpio0 6  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
         };
 
+        /* status LED (red) */
         led1: led1 {
             gpios = <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
         };
 
+        /* status LED (green) */
         led2: led2 {
             gpios = <&gpio0 9  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
         };
 
+        /* status LED (blue) */
         led3: led3 {
             gpios = <&gpio0 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
         };

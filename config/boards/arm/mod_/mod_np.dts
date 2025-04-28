@@ -22,6 +22,7 @@
         >;
     };
 
+    /* work-around for NUM LOCK LED indicator functionality */
     EXT_POWER {
         compatible = "zmk,ext-power-generic";
         control-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH)>;

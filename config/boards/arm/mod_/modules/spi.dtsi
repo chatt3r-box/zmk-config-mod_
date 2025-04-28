@@ -34,6 +34,10 @@
     pinctrl-1 = <&spi3_sleep>;
     pinctrl-names = "default", "sleep";
 
+    /* 
+     * SK6812MINI-E reverse-mount RGB LED
+     * CAPS / NUM / SCROll lock indicator
+     */
     lock_led: ws2812@0 {
         compatible = "worldsemi,ws2812-spi";
 
