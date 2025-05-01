@@ -69,10 +69,10 @@ CONFIG_RGBLED_WIDGET=y
 CONFIG_RGBLED_WIDGET_BATTERY_LEVEL_LOW=10
 
 # weak bond for better battery life on mn.l
-CONFIG_ZMK_SPLIT_BLE_PREF_WEAK_BOND=y
+# CONFIG_ZMK_SPLIT_BLE_PREF_WEAK_BOND=y
 
 # timer to suspend continuous scanning extra peripherals within 30 seconds once any peripheral is connected
-CONFIG_ZMK_SPLIT_BLE_PREF_CONTINUOUS_SCAN_WINDOW=30000 
+# CONFIG_ZMK_SPLIT_BLE_PREF_CONTINUOUS_SCAN_WINDOW=30000
 
 # # uncomment to enable USB logging & debugging
 # CONFIG_ZMK_USB_LOGGING=y
