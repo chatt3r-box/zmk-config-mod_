@@ -5,10 +5,10 @@
  */
 
 #include "mod_.dtsi"
-#include "modules/i2c.dtsi"
-#include "modules/spi.dtsi"
-#include "modules/qdec.dtsi"
-#include "modules/leds.dtsi"
+// #include "modules/i2c.dtsi"
+// #include "modules/spi.dtsi"
+// #include "modules/qdec.dtsi"
+// #include "modules/leds.dtsi"
 
 / {
     chosen {
