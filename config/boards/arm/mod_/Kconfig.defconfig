@@ -17,10 +17,10 @@ endif # BOARD_MOD_MN_L
 if BOARD_MOD_MN_L || BOARD_MOD_MN_R
 
 config I2C
-    default y
+    default n
 
 config ZMK_MAX17048
-    default y
+    default n
 
 endif # BOARD_MOD_MN_L || BOARD_MOD_MN_R
 
