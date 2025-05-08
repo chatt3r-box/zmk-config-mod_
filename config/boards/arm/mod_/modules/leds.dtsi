@@ -25,17 +25,17 @@
 
         /* status LED (red) */
         led1: led1 {
-            gpios = <&gpio0 11 (GPIO_ACTIVE_LOW)>;
+            gpios = <&gpio0 11 (GPIO_ACTIVE_HIGH)>;
         };
 
         /* status LED (green) */
         led2: led2 {
-            gpios = <&gpio1 0  (GPIO_ACTIVE_LOW)>;
+            gpios = <&gpio1 0  (GPIO_ACTIVE_HIGH)>;
         };
 
         /* status LED (blue) */
         led3: led3 {
-            gpios = <&gpio1 9  (GPIO_ACTIVE_LOW)>;
+            gpios = <&gpio1 9  (GPIO_ACTIVE_HIGH)>;
         };
     };
 };
