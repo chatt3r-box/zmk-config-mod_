@@ -20,7 +20,7 @@
 
         /* CAPS LOCK LED */
         led0: led0 {
-            gpios = <&gpio0 27 (GPIO_ACTIVE_HIGH)>;
+            gpios = <&gpio0 27 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         };
 
         /* status LED (red) */
