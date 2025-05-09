@@ -20,7 +20,7 @@
                          &kp TAB     &kp Q   &kp W   &kp E   &kp R   &kp T
                 &kp C_PP &kp CLCK      &kp A   &kp S   &kp D   &kp F   &kp G
                          &kp LSHFT &kp BSLH &kp Z  &kp X   &kp C   &kp V
-                         &kp LCTRL &kp LWIN  &kp LALT        &kp SPACE
+                         &mo 2 &kp LWIN  &kp LALT        &kp SPACE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;

@@ -76,7 +76,7 @@ CONFIG_RGBLED_WIDGET_BATTERY_LEVEL_CRITICAL=5
 # timer to suspend continuous scanning extra peripherals within 30 seconds once any peripheral is connected
 # CONFIG_ZMK_SPLIT_BLE_PREF_CONTINUOUS_SCAN_WINDOW=30000
 
-# # uncomment to enable USB logging & debugging
-# CONFIG_ZMK_USB_LOGGING=y
-# CONFIG_ZMK_LOG_LEVEL_DBG=y
-# CONFIG_I2C_LOG_LEVEL_DBG=y
+# uncomment to enable USB logging & debugging
+CONFIG_ZMK_USB_LOGGING=y
+CONFIG_ZMK_LOG_LEVEL_DBG=y
+CONFIG_I2C_LOG_LEVEL_DBG=y
