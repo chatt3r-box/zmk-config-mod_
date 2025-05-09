@@ -8,10 +8,15 @@
 
 / {
     aliases {
-        led-lock = &led0;
+        led-lock = &ledc;
         led-red = &led1;
         led-green = &led2;
         led-blue = &led3;
+    };
+
+    ledc: EXT_POWER {
+        compatible = "zmk,ext-power-generic";
+        control-gpios = <&gpio0 27 (GPIO_ACTIVE_HIGH)>;
     };
 
     leds {
@@ -20,7 +25,7 @@
 
         /* CAPS / NUM / SCROLL LOCK LED */
         led0: led0 {
-            gpios = <&gpio0 27 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+            gpios = <&gpio0 27 (GPIO_ACTIVE_HIGH)>;
         };
 
         /* status LED (red) */
