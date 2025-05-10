@@ -38,7 +38,7 @@ CONFIG_I2C=y
 CONFIG_I2C_NRFX=y
 
 # USB & BLE
-CONFIG_ZMK_USB=n
+CONFIG_ZMK_USB=y
 CONFIG_ZMK_BLE=y
 
 # battery reporting
@@ -53,3 +53,8 @@ CONFIG_RGBLED_WIDGET_BATTERY_LEVEL_LOW=10
 
 # weak bond for better battery life on mn.l
 # CONFIG_ZMK_SPLIT_BLE_PREF_WEAK_BOND=y
+
+# uncomment to enable USB logging & debugging
+CONFIG_ZMK_USB_LOGGING=y
+CONFIG_ZMK_LOG_LEVEL_DBG=y
+CONFIG_I2C_LOG_LEVEL_DBG=y
