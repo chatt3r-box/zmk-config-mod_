@@ -10,6 +10,10 @@
 #include "modules/leds.dtsi"
 
 / {
+    chosen {
+        zephyr,console = &cdc_acm_uart;
+    };
+
     default_transform: matrix_transform {
         compatible = "zmk,matrix-transform";
         rows = <5>;
@@ -22,5 +26,14 @@
             RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(3,6) RC(3,7) RC(3,8)
                     RC(4,1)         RC(4,3) RC(4,4) RC(4,5) RC(4,6) RC(4,7) RC(4,8)
         >;
+    };
+};
+
+&usbd {
+
+    /* USB logging & debugging */
+    status = "okay";
+    cdc_acm_uart: cdc_acm_uart {
+        compatible = "zephyr,cdc-acm-uart";
     };
 };

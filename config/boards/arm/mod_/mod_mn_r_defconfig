@@ -38,7 +38,7 @@ CONFIG_I2C=y
 CONFIG_I2C_NRFX=y
 
 # USB & BLE
-CONFIG_ZMK_USB=n
+CONFIG_ZMK_USB=y
 CONFIG_ZMK_BLE=y
 
 # battery reporting
