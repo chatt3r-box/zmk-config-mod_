@@ -8,7 +8,7 @@
 
 / {
     aliases {
-        led-lock = &led0;
+        // led-lock = &led0;
         led-red = &led1;
         led-green = &led2;
         led-blue = &led3;
@@ -18,10 +18,10 @@
         compatible = "gpio-leds";
         status = "okay";
 
-        /* CAPS LOCK LED */
-        led0: led0 {
-            gpios = <&gpio0 27 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        };
+        // /* CAPS LOCK LED */
+        // led0: led0 {
+        //     gpios = <&gpio0 27 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        // };
 
         /* status LED (red) */
         led1: led1 {
