@@ -37,7 +37,7 @@ CONFIG_EC11_TRIGGER_GLOBAL_THREAD=y
 CONFIG_I2C=y
 CONFIG_I2C_NRFX=y
 
-# USB & BLE
+# connectivity
 CONFIG_ZMK_USB=y
 CONFIG_ZMK_BLE=y
 
@@ -51,7 +51,7 @@ CONFIG_LED=y
 CONFIG_RGBLED_WIDGET=y
 CONFIG_RGBLED_WIDGET_BATTERY_LEVEL_LOW=10
 
-# weak bond for better battery life on mn.l
+# # weak bond for better battery life on mn.l
 # CONFIG_ZMK_SPLIT_BLE_PREF_WEAK_BOND=y
 
 # uncomment to enable USB logging & debugging

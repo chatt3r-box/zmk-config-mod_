@@ -36,7 +36,7 @@ CONFIG_WS2812_STRIP=y
 # enable SPI
 CONFIG_SPI=y
 
-# USB & BLE
+# connectivity
 CONFIG_ZMK_USB=y
 CONFIG_ZMK_BLE=y
 

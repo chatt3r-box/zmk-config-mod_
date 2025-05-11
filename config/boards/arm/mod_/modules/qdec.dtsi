@@ -33,7 +33,7 @@
 
 /*
  * panasonic EVQWGD001 horizontal rotary encoder
- * volume control and / or scrolling
+ * volume control / scrolling
  */ 
 encoder: &qdec0 {
     status = "okay";
