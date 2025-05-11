@@ -8,19 +8,13 @@
 #include "modules/spi.dtsi"
 
 / {
-    default_transform: matrix_transform {
-        compatible = "zmk,matrix-transform";
-        rows = <1>;
-        columns = <8>;
-
-        map = <
-            RC(0,0) RC(0,1) RC(0,2) RC(0,3) RC(0,4) RC(0,5) RC(0,6) RC(0,7)
-        >;
-    };
-
     /* work-around for SCROLL LOCK LED indicator functionality */
     EXT_POWER {
         compatible = "zmk,ext-power-generic";
         control-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH)>;
     };
+};
+
+&default_transform {
+    col-offset = <7>;
 };

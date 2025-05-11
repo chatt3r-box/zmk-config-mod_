@@ -30,8 +30,14 @@ CONFIG_GPIO=y
 CONFIG_PINCTRL=y
 
 # USB & BLE
-CONFIG_ZMK_USB=n
+CONFIG_ZMK_USB=y
 CONFIG_ZMK_BLE=y
 
-# weak bond for better battery life on mn.l
-CONFIG_ZMK_SPLIT_BLE_PREF_WEAK_BOND=y
+# # weak bond for better battery life on mn.l
+# CONFIG_ZMK_SPLIT_BLE_PREF_WEAK_BOND=y
+
+# # uncomment to enable USB logging & debugging
+# CONFIG_ZMK_USB_LOGGING=y
+# CONFIG_ZMK_LOG_LEVEL_DBG=y
+# CONFIG_I2C_LOG_LEVEL_DBG=y
+# CONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
