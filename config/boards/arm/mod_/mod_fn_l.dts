@@ -5,3 +5,7 @@
  */
 
 #include "mod_.dtsi"
+
+&default_transform {
+    col-offset = <2>;
+};
