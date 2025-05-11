@@ -35,6 +35,8 @@
                 &kp F7  &kp F8              &kp LSHFT &kp BSLH &kp Z  &kp X   &kp C   &kp V    &kp B   &kp N   &kp M   &kp COMMA &kp DOT &kp FSLH &kp RSHFT          &kp UP   &kp DEL             &kp KP_N1   &kp KP_N2    &kp KP_N3       &kp KP_ENTER
                 &kp F9  &kp F10             &LCTRL &kp LWIN  &kp LALT       &kp SPACE        &kp SPACE          &kp RALT       &mo 1       &kp RCTRL      &kp LEFT &kp DOWN &kp RIGHT             &kp KP_N0                &kp KP_DOT
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         fn_layer {
