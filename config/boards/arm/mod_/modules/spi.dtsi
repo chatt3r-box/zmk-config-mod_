@@ -15,15 +15,13 @@
 &pinctrl {
     spi3_default: spi3_default {
         group1 {
-            // psels = <NRF_PSEL(SPIM_MOSI, 0, 20)>;
-            psels = <NRF_PSEL(SPIM_MOSI, 1, 0)>;
+            psels = <NRF_PSEL(SPIM_MOSI, 0, 20)>;
         };
     };
 
     spi3_sleep: spi3_sleep {
         group1 {
-            // psels = <NRF_PSEL(SPIM_MOSI, 0, 20)>;
-            psels = <NRF_PSEL(SPIM_MOSI, 1, 0)>;
+            psels = <NRF_PSEL(SPIM_MOSI, 0, 20)>;
             low-power-enable;
         };
     };
@@ -38,14 +36,14 @@
 
     /* 
      * SK6812MINI-E reverse-mount RGB LED
-     * CAPS / NUM / SCROll lock indicator
+     * CAPS LOCK indicator
      */
     lock_led: ws2812@0 {
         compatible = "worldsemi,ws2812-spi";
 
         /* SPI */
         reg = <0>; /* ignored, but necessary for SPI bindings */
-        spi-max-frequency = <4000000>;
+        spi-max-frequency = <1000000>;
 
         /* WS2812 */
         chain-length = <1>; /* number of LEDs */
