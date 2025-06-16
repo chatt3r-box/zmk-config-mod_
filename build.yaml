@@ -25,3 +25,4 @@ include:
   - board: mod_fn_r
   - board: mod_np
   - board: mod_xt
+fallback_binary: hex
